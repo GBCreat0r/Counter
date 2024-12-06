@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "zastavki-gas-kvas-com-ss4d-p-zastavki-na-chat-9.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
