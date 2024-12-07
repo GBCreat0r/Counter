@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,25 +21,61 @@
                                 <rect key="frame" x="-237" y="-69" width="866" height="990"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-8M-9V9">
-                                <rect key="frame" x="0.0" y="87" width="393" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="106"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxy-hV-tLi">
-                                <rect key="frame" x="16" y="316" width="361" height="361"/>
+                                <rect key="frame" x="197" y="401" width="196" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0039215688589999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="PRESS" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="DiwanMishafi" family="Mishafi" pointSize="67"/>
-                                    <color key="baseForegroundColor" red="0.043279357254505157" green="0.91387683153152466" blue="0.88669830560684204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.91962766647338867" green="0.044072896242141724" blue="0.099590905010700226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.95759087800979614" green="0.078602932393550873" blue="0.12155892699956894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <imageReference key="image" image="plus" catalog="system" variableValue="1"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="gray" title="+" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="144"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8N-pb-DG4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCC-fe-2HY" userLabel="minusButton">
+                                <rect key="frame" x="0.0" y="401" width="189" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.042293690145015717" green="0.83495038747787476" blue="0.9209941029548645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="-" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="144"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k27-nn-Unr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmm-rW-QaZ" userLabel="resetButton">
+                                <rect key="frame" x="0.0" y="727" width="393" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="X" cornerStyle="fixed">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="63"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VFS-zU-pLC"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="История изменений:" translatesAutoresizingMaskIntoConstraints="NO" id="qJD-iL-Pzu">
+                                <rect key="frame" x="0.0" y="226" width="393" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-8M-9V9">
+                                <rect key="frame" x="0.0" y="62" width="393" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="106"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,7 +83,10 @@
                     <connections>
                         <outlet property="background" destination="Jwy-Dp-CcR" id="mlF-qG-mWz"/>
                         <outlet property="counter" destination="Cc4-8M-9V9" id="axQ-Ow-QgO"/>
+                        <outlet property="history" destination="qJD-iL-Pzu" id="z6R-nU-3oe"/>
                         <outlet property="mainButton" destination="Yxy-hV-tLi" id="3ow-wo-0oY"/>
+                        <outlet property="minusButton" destination="jCC-fe-2HY" id="DuM-6H-VHG"/>
+                        <outlet property="resetButton" destination="bmm-rW-QaZ" id="xx9-ml-lwO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="zastavki-gas-kvas-com-ss4d-p-zastavki-na-chat-9" width="2932" height="2932"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
