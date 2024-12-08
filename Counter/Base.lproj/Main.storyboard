@@ -21,7 +21,7 @@
                                 <rect key="frame" x="-237" y="-69" width="866" height="990"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxy-hV-tLi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxy-hV-tLi" userLabel="plusButton">
                                 <rect key="frame" x="197" y="401" width="196" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.91962766647338867" green="0.044072896242141724" blue="0.099590905010700226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,7 +34,7 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="144"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8N-pb-DG4"/>
+                                    <action selector="pressPlusBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCe-JZ-0HN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCC-fe-2HY" userLabel="minusButton">

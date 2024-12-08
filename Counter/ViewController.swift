@@ -27,6 +27,8 @@ class ViewController: UIViewController {
    
     private var counterValue: UInt32 = 0
     
+    private var dateFormatter = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         counter.text = "0"
@@ -34,18 +36,15 @@ class ViewController: UIViewController {
     }
 
     private func currentTime() -> String {
-        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return dateFormatter.string(from: Date())
     }
     
     
-    @IBAction private func pressButton(_ sender: Any) {
-        counterValue += 1
+    @IBAction func pressPlusBotton(_ sender: Any) {counterValue += 1
         counter.text = String(counterValue)
         history.text += "\n\(currentTime()): Значение изменено на +1"
     }
-    
     
     @IBAction private func pressMinusButton(_ sender: Any) {
         if counterValue != 0 {counterValue -= 1
